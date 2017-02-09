@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+
+	<style>
+	input{
+		display: inline-block;
+	}
+	#radio, #submit{
+	visibility: hidden;
+	}
+	#c1, #c2, #c3, #c4{
+	padding-bottom: 20px;
+	} 
+	</style>
+	 <!--Script för att få jQuery att fungera som det ska-->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+<button id="start">Start</button>
+
+<p id="question"></p>
+
+
+
+<form id="radio">
+  <input type="radio" id="r1" name="answer" value="c1"> <div id="c1"></div>
+  <input type="radio" id="r2" name="answer" value="c2"> <div id="c2"></div>
+  <input type="radio" id="r3" name="answer" value="c3"> <div id="c3"></div>
+  <input type="radio" id="r4" name="answer" value="c4"> <div id="c4"></div>
+</form>
+	
+	<!--<div id="c1"></div>
+	<div id="c2"></div>
+	<div id="c3"></div>
+	<div id="c4"></div>
+	<input type="text" name="inputAnswer" placeholder="Name" id="inputAnswer">-->
+  	<button id="submit">Submit</button>
+
+<div id="output"></div>
+
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>
